@@ -25,7 +25,12 @@
     html { min-height:100%; }
     body {
       min-height:100vh; margin:0; color:var(--ink);
-      background:#d2ccc0 url("images/hero-bg.jpg") center / cover no-repeat fixed;
+      background-color:#d2ccc0;
+      background-image:url("hero-bg.jpg.png");
+      background-position:center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
       font-family:"Inter",Arial,sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
     }
     .page { position:relative; isolation:isolate; display:grid; min-height:100vh; place-items:center; overflow:hidden; padding:clamp(1.5rem,4vw,4rem); }
@@ -57,7 +62,7 @@
       <div class="rule" aria-hidden="true"></div>
       <p class="headline">Premium men's essentials,<br><em>made to breathe.</em></p>
       <p class="copy">Designed with a quiet focus on natural materials, enduring quality and everyday comfort. Our first collection is currently in development.</p>
-      <a class="contact" href="mailto:@foranova.com">@foranova.com</a>
+      <a class="contact" href="mailto:@foranova.com">hello@foranova.com</a>
     </section>
     <p class="footer">© 2026 Foranova</p>
   </main>
