@@ -1,57 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FORANOVA</title>
-    <meta name="description" content="Premium men's essentials crafted from natural fibers.">
+<title>FORANOVA</title>
+<meta name="description" content="Premium men's essentials crafted from natural fibers.">
 
-    <link rel="icon" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#ffffff;
+    color:#111111;
+
+    font-family:'Inter',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+main{
+
+    max-width:640px;
+    text-align:center;
+
+    animation:fade 1s ease;
+
+}
+
+h1{
+
+    font-family:'EB Garamond',serif;
+
+    font-size:78px;
+    font-weight:600;
+
+    letter-spacing:6px;
+
+    margin-bottom:40px;
+
+}
+
+h2{
+
+    font-size:32px;
+    font-weight:400;
+
+    line-height:1.45;
+
+    margin-bottom:42px;
+
+}
+
+p{
+
+    color:#555555;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+
+.contact{
+
+    margin-top:60px;
+
+}
+
+.contact a{
+
+    text-decoration:none;
+
+    color:#111111;
+
+    font-size:17px;
+
+    transition:.25s;
+
+}
+
+.contact a:hover{
+
+    opacity:.45;
+
+}
+
+footer{
+
+    margin-top:90px;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#999999;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(12px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:54px;
+
+letter-spacing:4px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+p{
+
+font-size:17px;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <main>
 
-    <h1>FORANOVA</h1>
+<h1>FORANOVA</h1>
 
-    <h2>
-        Premium men's essentials<br>
-        crafted from natural fibers.
-    </h2>
+<h2>
+Premium men's essentials<br>
+crafted from natural fibers.
+</h2>
 
-    <p>
-        Designed with an uncompromising focus on comfort,
-        quality, and timeless design.
-    </p>
+<p>
+Designed with an uncompromising focus on comfort,
+quality and timeless design.
+</p>
 
-    <p>
-        Our first collection is currently in development.
-    </p>
+<p>
+Our first collection is currently in development.
+</p>
 
-    <p>
-        Made with carefully selected natural materials and
-        produced in partnership with experienced European manufacturers.
-    </p>
+<div class="contact">
 
-    <div class="footer">
+<a href="mailto:hello@foranova.com">
+hello@foranova.com
+</a>
 
-        <span>Launching Soon</span>
+</div>
 
-        <a href="mailto:hello@foranova.com">
-            hello@foranova.com
-        </a>
+<footer>
 
-    </div>
+© 2026 FORANOVA
+
+</footer>
 
 </main>
 
 </body>
+
 </html>
