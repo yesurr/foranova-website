@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>FORANOVA</title>
+<title>FORANOVA | Premium Men's Essentials</title>
+
 <meta name="description" content="Premium men's essentials crafted from natural fibers.">
+
+<meta property="og:title" content="FORANOVA">
+<meta property="og:description" content="Premium men's essentials crafted from natural fibers.">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,112 +20,131 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
 }
 
 body{
 
-    background:#ffffff;
-    color:#111111;
+background:#ffffff;
+color:#111111;
 
-    font-family:'Inter',sans-serif;
+font-family:'Inter',sans-serif;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+display:flex;
+justify-content:center;
+align-items:center;
 
-    min-height:100vh;
+min-height:100vh;
 
-    padding:40px;
-
-}
-
-main{
-
-    max-width:640px;
-    text-align:center;
-
-    animation:fade 1s ease;
+padding:48px;
 
 }
 
-h1{
+.container{
 
-    font-family:'EB Garamond',serif;
+width:100%;
+max-width:620px;
 
-    font-size:78px;
-    font-weight:600;
+text-align:center;
 
-    letter-spacing:6px;
-
-    margin-bottom:40px;
+animation:fade .9s ease;
 
 }
 
-h2{
+.brand{
 
-    font-size:32px;
-    font-weight:400;
+font-family:'EB Garamond',serif;
 
-    line-height:1.45;
+font-size:5rem;
 
-    margin-bottom:42px;
+font-weight:600;
+
+letter-spacing:.22em;
+
+margin-bottom:3rem;
 
 }
 
-p{
+.tagline{
 
-    color:#555555;
+font-size:1.9rem;
 
-    font-size:18px;
+font-weight:400;
 
-    line-height:1.9;
+line-height:1.45;
 
-    margin-bottom:24px;
+margin-bottom:3rem;
+
+}
+
+.copy{
+
+font-size:1.08rem;
+
+font-weight:300;
+
+line-height:2;
+
+color:#555;
+
+max-width:520px;
+
+margin:0 auto;
+
+}
+
+.copy p{
+
+margin-bottom:1.4rem;
 
 }
 
 .contact{
 
-    margin-top:60px;
+margin-top:4.5rem;
 
 }
 
 .contact a{
 
-    text-decoration:none;
+color:#111;
 
-    color:#111111;
+text-decoration:none;
 
-    font-size:17px;
+font-size:1rem;
 
-    transition:.25s;
+letter-spacing:.04em;
+
+border-bottom:1px solid transparent;
+
+transition:.25s;
 
 }
 
 .contact a:hover{
 
-    opacity:.45;
+border-color:#111;
 
 }
 
 footer{
 
-    margin-top:90px;
+margin-top:5rem;
 
-    font-size:13px;
+font-size:.72rem;
 
-    letter-spacing:2px;
+letter-spacing:.28em;
 
-    text-transform:uppercase;
+text-transform:uppercase;
 
-    color:#999999;
+color:#999;
 
 }
 
@@ -129,7 +153,7 @@ footer{
 from{
 
 opacity:0;
-transform:translateY(12px);
+transform:translateY(18px);
 
 }
 
@@ -142,25 +166,37 @@ transform:translateY(0);
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-h1{
+body{
 
-font-size:54px;
-
-letter-spacing:4px;
+padding:32px;
 
 }
 
-h2{
+.brand{
 
-font-size:24px;
+font-size:3.4rem;
+
+letter-spacing:.16em;
+
+margin-bottom:2.2rem;
 
 }
 
-p{
+.tagline{
 
-font-size:17px;
+font-size:1.45rem;
+
+margin-bottom:2.2rem;
+
+}
+
+.copy{
+
+font-size:1rem;
+
+line-height:1.9;
 
 }
 
@@ -172,23 +208,28 @@ font-size:17px;
 
 <body>
 
-<main>
+<div class="container">
 
-<h1>FORANOVA</h1>
+<h1 class="brand">
+FORANOVA
+</h1>
 
-<h2>
+<h2 class="tagline">
 Premium men's essentials<br>
 crafted from natural fibers.
 </h2>
 
+<div class="copy">
+
 <p>
-Designed with an uncompromising focus on comfort,
-quality and timeless design.
+Designed with an uncompromising focus on comfort, quality and timeless design.
 </p>
 
 <p>
 Our first collection is currently in development.
 </p>
+
+</div>
 
 <div class="contact">
 
@@ -204,8 +245,7 @@ hello@foranova.com
 
 </footer>
 
-</main>
+</div>
 
 </body>
-
 </html>
