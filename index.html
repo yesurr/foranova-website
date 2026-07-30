@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2f2c27">
+  <meta name="theme-color" content="#d7d0c3">
   <meta name="description" content="FORANOVA creates premium men's essentials with a focus on natural materials, comfort and timeless design.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://foranova.com/">
@@ -18,53 +18,74 @@
   <meta name="twitter:description" content="Premium men's essentials with a focus on natural materials, comfort and timeless design.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#1f1d1a; --soft-ink:#4c4943; --line:rgba(31,29,26,.28); }
-    * { box-sizing:border-box; }
-    html { min-height:100%; }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
     body {
-      min-height:100vh; margin:0; color:var(--ink);
-      background-color:#d2ccc0;
-      background-image:url("hero-bg.jpg.png");
-      background-position:center;
-      background-size:cover;
-      background-repeat:no-repeat;
-      background-attachment:fixed;
-      font-family:"Inter",Arial,sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      min-height: 100vh;
+      margin: 0;
+      background: #d7d0c3 url("hero-bg.jpg.png") center / cover no-repeat fixed;
+      color: #1f1d1a;
+      font-family: Inter, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
-    .page { position:relative; isolation:isolate; display:grid; min-height:100vh; place-items:center; overflow:hidden; padding:clamp(1.5rem,4vw,4rem); }
-    .page::before { position:absolute; z-index:-2; inset:0; content:""; background:linear-gradient(90deg,rgba(247,244,237,.82),rgba(247,244,237,.42) 48%,rgba(247,244,237,.67)),linear-gradient(180deg,rgba(31,29,26,.10),transparent 34%,rgba(31,29,26,.15)); }
-    .page::after { position:absolute; z-index:-1; inset:0; content:""; opacity:.23; background-image:radial-gradient(rgba(31,29,26,.28) .45px,transparent .65px); background-size:5px 5px; pointer-events:none; mix-blend-mode:multiply; }
-    .hero { width:min(100%,54rem); text-align:center; animation:reveal 1.1s cubic-bezier(.22,.8,.24,1) both; }
-    .eyebrow { margin:0 0 clamp(1.6rem,4vw,3rem); color:var(--soft-ink); font-size:.65rem; font-weight:500; letter-spacing:.28em; line-height:1.4; text-transform:uppercase; }
-    h1 { margin:0; font-family:"Cormorant Garamond",Georgia,serif; font-size:clamp(4rem,13vw,8.6rem); font-weight:600; letter-spacing:.13em; line-height:.78; text-indent:.13em; }
-    .rule { width:1px; height:clamp(3.5rem,9vw,6.5rem); margin:clamp(1.8rem,4.5vw,3.2rem) auto; background:var(--line); }
-    .headline { max-width:40rem; margin:0 auto; font-family:"Cormorant Garamond",Georgia,serif; font-size:clamp(2rem,5vw,3.55rem); font-weight:500; letter-spacing:-.018em; line-height:1.02; }
-    .headline em { font-style:italic; }
-    .copy { max-width:31rem; margin:clamp(1.8rem,4.5vw,3rem) auto 0; color:var(--soft-ink); font-size:clamp(.9rem,1.5vw,1rem); line-height:1.9; }
-    .contact { display:inline-flex; align-items:center; gap:.75rem; margin-top:clamp(2.4rem,5vw,4rem); padding-bottom:.4rem; border-bottom:1px solid var(--ink); color:var(--ink); font-size:.68rem; font-weight:500; letter-spacing:.2em; text-decoration:none; text-transform:uppercase; transition:opacity 180ms ease,transform 180ms ease; }
-    .contact::after { content:"↗"; font-size:.9rem; line-height:1; transition:transform 180ms ease; }
-    .contact:hover,.contact:focus-visible { opacity:.62; transform:translateY(-1px); }
-    .contact:hover::after,.contact:focus-visible::after { transform:translate(2px,-2px); }
-    .contact:focus-visible { outline:2px solid var(--ink); outline-offset:6px; }
-    .footer { position:absolute; right:clamp(1.25rem,3vw,2.4rem); bottom:clamp(1.25rem,3vw,2.4rem); margin:0; color:rgba(31,29,26,.66); font-size:.58rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; }
-    @keyframes reveal { from { opacity:0; transform:translateY(1.1rem); } to { opacity:1; transform:translateY(0); } }
-    @media (max-width:42rem) { body { background-attachment:scroll; } .page::before { background:linear-gradient(90deg,rgba(247,244,237,.82),rgba(247,244,237,.64)),linear-gradient(180deg,rgba(31,29,26,.08),rgba(31,29,26,.12)); } h1 { letter-spacing:.09em; text-indent:.09em; } .footer { position:static; margin-top:3.25rem; } }
-    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
+    .page {
+      position: relative;
+      display: grid;
+      min-height: 100vh;
+      grid-template-rows: 1fr auto;
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+      overflow: hidden;
+    }
+    .page::before {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      content: "";
+      background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 55%, rgba(255,255,255,.12));
+      pointer-events: none;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .contact {
+      position: relative;
+      z-index: 1;
+      justify-self: center;
+      margin-bottom: clamp(.2rem, 1vw, .75rem);
+      padding: .55rem 0;
+      border-bottom: 1px solid rgba(31,29,26,.72);
+      color: #1f1d1a;
+      font-size: clamp(.62rem, 1.2vw, .72rem);
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+    .contact:hover, .contact:focus-visible { opacity: .58; transform: translateY(-1px); }
+    .contact:focus-visible { outline: 2px solid #1f1d1a; outline-offset: 6px; }
+    @media (max-width: 42rem) {
+      body { background-attachment: scroll; background-position: center; }
+      .page { padding: 1.25rem; }
+      .contact { margin-bottom: .25rem; letter-spacing: .14em; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   </style>
 </head>
 <body>
   <main class="page">
-    <section class="hero" aria-labelledby="brand-name">
-      <p class="eyebrow">Natural materials · considered comfort</p>
-      <h1 id="brand-name">FORANOVA</h1>
-      <div class="rule" aria-hidden="true"></div>
-      <p class="headline">Premium men's essentials,<br><em>made to breathe.</em></p>
-      <p class="copy">Designed with a quiet focus on natural materials, enduring quality and everyday comfort. Our first collection is currently in development.</p>
-      <a class="contact" href="mailto:@foranova.com">hello@foranova.com</a>
-    </section>
-    <p class="footer">© 2026 Foranova</p>
+    <h1 class="sr-only">FORANOVA — Premium men's essentials crafted from natural fibers</h1>
+    <a class="contact" href="mailto:hello@foranova.com">hello@foranova.com</a>
   </main>
 </body>
 </html>
