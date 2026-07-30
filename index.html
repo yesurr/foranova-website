@@ -5,17 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>FORANOVA | Premium Men's Essentials</title>
-
 <meta name="description" content="Premium men's essentials crafted from natural fibers.">
-
-<meta property="og:title" content="FORANOVA">
-<meta property="og:description" content="Premium men's essentials crafted from natural fibers.">
-<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -26,177 +21,220 @@ box-sizing:border-box;
 }
 
 html{
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
+height:100%;
 }
 
 body{
 
-background:#ffffff;
-color:#111111;
+height:100%;
 
 font-family:'Inter',sans-serif;
+
+color:#1b1b1b;
+
+background:
+linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),
+url("linen.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 
-min-height:100vh;
-
-padding:48px;
+padding:40px;
 
 }
 
 .container{
 
 width:100%;
-max-width:620px;
+max-width:720px;
 
 text-align:center;
 
-animation:fade .9s ease;
+backdrop-filter:blur(2px);
+
+animation:fade .8s ease;
 
 }
 
-.brand{
+.logo{
 
-font-family:'EB Garamond',serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:5rem;
-
-font-weight:600;
+font-size:88px;
 
 letter-spacing:.22em;
 
-margin-bottom:3rem;
+font-weight:600;
+
+margin-bottom:28px;
 
 }
 
-.tagline{
+.line{
 
-font-size:1.9rem;
+width:1px;
+height:70px;
 
-font-weight:400;
+background:#b9b9b9;
 
-line-height:1.45;
-
-margin-bottom:3rem;
+margin:0 auto 40px auto;
 
 }
 
-.copy{
+h2{
 
-font-size:1.08rem;
+font-size:30px;
 
-font-weight:300;
+font-weight:500;
 
-line-height:2;
+letter-spacing:.18em;
 
-color:#555;
+text-transform:uppercase;
+
+line-height:1.6;
+
+margin-bottom:55px;
+
+}
+
+.description{
 
 max-width:520px;
 
-margin:0 auto;
+margin:auto;
+
+font-size:20px;
+
+font-weight:300;
+
+line-height:1.9;
+
+color:#565656;
 
 }
 
-.copy p{
+.description p{
 
-margin-bottom:1.4rem;
-
-}
-
-.contact{
-
-margin-top:4.5rem;
+margin-bottom:24px;
 
 }
 
-.contact a{
+.development{
 
-color:#111;
+font-family:'Cormorant Garamond',serif;
+
+font-size:34px;
+
+font-style:italic;
+
+margin-top:12px;
+
+color:#444;
+
+}
+
+.email{
+
+margin-top:70px;
+
+}
+
+.email a{
+
+font-size:18px;
+
+letter-spacing:.18em;
 
 text-decoration:none;
 
-font-size:1rem;
+color:#111;
 
-letter-spacing:.04em;
+padding-bottom:4px;
 
-border-bottom:1px solid transparent;
+border-bottom:1px solid #111;
 
 transition:.25s;
 
 }
 
-.contact a:hover{
+.email a:hover{
 
-border-color:#111;
+opacity:.55;
 
 }
 
 footer{
 
-margin-top:5rem;
+margin-top:90px;
 
-font-size:.72rem;
+font-size:12px;
 
-letter-spacing:.28em;
+letter-spacing:.35em;
+
+color:#888;
 
 text-transform:uppercase;
-
-color:#999;
 
 }
 
 @keyframes fade{
 
 from{
-
 opacity:0;
-transform:translateY(18px);
-
+transform:translateY(16px);
 }
 
 to{
-
 opacity:1;
-transform:translateY(0);
-
+transform:none;
 }
 
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-body{
+.logo{
 
-padding:32px;
-
-}
-
-.brand{
-
-font-size:3.4rem;
-
-letter-spacing:.16em;
-
-margin-bottom:2.2rem;
+font-size:58px;
 
 }
 
-.tagline{
+.line{
 
-font-size:1.45rem;
+height:50px;
 
-margin-bottom:2.2rem;
+margin-bottom:28px;
 
 }
 
-.copy{
+h2{
 
-font-size:1rem;
+font-size:20px;
 
-line-height:1.9;
+}
+
+.description{
+
+font-size:17px;
+
+}
+
+.development{
+
+font-size:26px;
+
+}
+
+.email a{
+
+font-size:15px;
+
+letter-spacing:.12em;
 
 }
 
@@ -210,31 +248,33 @@ line-height:1.9;
 
 <div class="container">
 
-<h1 class="brand">
+<div class="logo">
 FORANOVA
-</h1>
+</div>
 
-<h2 class="tagline">
-Premium men's essentials<br>
-crafted from natural fibers.
+<div class="line"></div>
+
+<h2>
+Premium Men's Essentials<br>
+Crafted From Natural Fibers.
 </h2>
 
-<div class="copy">
+<div class="description">
 
 <p>
 Designed with an uncompromising focus on comfort, quality and timeless design.
 </p>
 
-<p>
+<div class="development">
 Our first collection is currently in development.
-</p>
+</div>
 
 </div>
 
-<div class="contact">
+<div class="email">
 
-<a href="mailto:hello@foranova.com">
-@foranova.com
+<a href="mailto:@foranova.com">
+HELLO@FORANOVA.COM
 </a>
 
 </div>
